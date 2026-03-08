@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App theme -->
+    <style name="Theme.SimpleNotes" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Optional: tweak typography or corner sizes here -->
+        <!-- Example neutral customizations -->
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="materialCardViewStyle">@style/Widget.SimpleNotes.MaterialCardView</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.SimpleNotes.OutlinedButton</item>
+    </style>
+
+    <!-- Safe default for all MaterialCardView in this theme -->
+    <style name="Widget.SimpleNotes.MaterialCardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
+        <item name="strokeColor">?attr/colorOutline</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">3dp</item>
+    </style>
+
+    <!-- Outlined buttons used in the formatting bar -->
+    <style name="Widget.SimpleNotes.OutlinedButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">40dp</item>
+        <item name="android:minWidth">40dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+</resources>
